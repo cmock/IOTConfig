@@ -1,0 +1,38 @@
+{
+    "name": "IOTConfig",
+    "version": "0.0.1",
+    "description": "Manage configuration values for IOT projects. Variables can be accessed via MQTT and are stored in ESP32 preferences. ESP32/Arduino only.",
+    "keywords": "variables, persistence, mqtt, preferences, iot, ESP32, Arduino",
+    "repository":
+    {
+	"type": "git",
+	"url": "https://github.com/cmock/IOTConfig.git"
+    },
+    "authors":
+    [
+	{
+	    "name": "christian mock",
+	    "email": "cm@tahina.priv.at",
+	    "url": "https://www.tahina.priv.at/"
+	}
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/cmock/IOTConfig",
+    "dependencies": {
+	"knolleary/PubSubClient": "^2.8"
+    },
+    "frameworks": "arduino",
+    "platforms": [
+	"espressif32"
+    ],
+    "headers": "IOTConfig.h",
+    "examples": [
+	{
+	    "name": "Basic IOTConfig example",
+	    "base": "examples/basic",
+	    "files": [
+		"basic.cpp"
+	    ]
+	}
+    ]
+}
